@@ -6,7 +6,8 @@
     <title>Unity WebGL Player | AnimDetail</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      UnityLoader.instantiate("unityContainer", "Build/Builds.json");
+//       UnityLoader.instantiate("unityContainer", "Build/Builds.json");
+      var unityInstance = UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%");
     </script>
   </head>
   <body>
